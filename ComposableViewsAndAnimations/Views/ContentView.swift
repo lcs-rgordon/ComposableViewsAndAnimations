@@ -86,6 +86,13 @@ struct ContentView: View {
 
                     }
                     
+                    NavigationLink(destination: LoadingIndicatorDescriptionView()) {
+                        
+                        SimpleListItemView(title: "Loading Indicator",
+                                           caption: "Use this view to indicate that the app is busy")
+
+                    }
+
                 }
                 
                 Section(header: Text("Assignment")) {

@@ -31,6 +31,8 @@
 		81D2F47925E5855600ACF089 /* ExerciseTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2F47825E5855600ACF089 /* ExerciseTwoView.swift */; };
 		81D2F47C25E5856E00ACF089 /* ExerciseThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2F47B25E5856E00ACF089 /* ExerciseThreeView.swift */; };
 		81D2F48325E7199300ACF089 /* TutorialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2F48225E7199300ACF089 /* TutorialsView.swift */; };
+		81E6F500281C595800BBE922 /* LoadingIndicatorDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E6F4FF281C595800BBE922 /* LoadingIndicatorDescriptionView.swift */; };
+		81E6F502281C5BAE00BBE922 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E6F501281C5BAE00BBE922 /* LoadingIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		81D2F48225E7199300ACF089 /* TutorialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsView.swift; sourceTree = "<group>"; };
 		81D2F48A25E71FA400ACF089 /* CompletionMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionMeterView.swift; sourceTree = "<group>"; };
 		81D2F48B25E71FA400ACF089 /* CompletionMeterDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionMeterDescriptionView.swift; sourceTree = "<group>"; };
+		81E6F4FF281C595800BBE922 /* LoadingIndicatorDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorDescriptionView.swift; sourceTree = "<group>"; };
+		81E6F501281C5BAE00BBE922 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,8 @@
 				81D2F48A25E71FA400ACF089 /* CompletionMeterView.swift */,
 				81331FAE25E729D600CFDB02 /* EncouragementDescriptionView.swift */,
 				81331FB125E72A5A00CFDB02 /* EncouragementView.swift */,
+				81E6F4FF281C595800BBE922 /* LoadingIndicatorDescriptionView.swift */,
+				81E6F501281C5BAE00BBE922 /* LoadingIndicatorView.swift */,
 			);
 			path = ComposableViewExamples;
 			sourceTree = "<group>";
@@ -281,9 +287,11 @@
 				81331FA925E721C800CFDB02 /* CompletionMeterDescriptionView.swift in Sources */,
 				81331FAB25E721CB00CFDB02 /* CompletionMeterView.swift in Sources */,
 				81D2F45F25E57B0900ACF089 /* IAExampleThreeView.swift in Sources */,
+				81E6F502281C5BAE00BBE922 /* LoadingIndicatorView.swift in Sources */,
 				81331FAF25E729D600CFDB02 /* EncouragementDescriptionView.swift in Sources */,
 				81331FB725E736AA00CFDB02 /* CustomComposableDescriptionView.swift in Sources */,
 				0E8E8B0525E5442100012516 /* ImplicitAnimationsView.swift in Sources */,
+				81E6F500281C595800BBE922 /* LoadingIndicatorDescriptionView.swift in Sources */,
 				81D2F46925E57FAE00ACF089 /* EAExampleOneView.swift in Sources */,
 				0E84E4F025E591F90052BC69 /* FontsView.swift in Sources */,
 				81D2F48325E7199300ACF089 /* TutorialsView.swift in Sources */,
