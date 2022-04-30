@@ -49,7 +49,7 @@ struct LoadingIndicatorDescriptionView: View {
             .padding(.bottom)
             
             List {
-                NavigationLink(destination: LoadingIndicatorView(duration: animationDuration)) {
+                NavigationLink(destination: LoadingIndicatorView(duration: animationDuration, spread: 75.0)) {
                     SimpleListItemView(title: "Loading Indicator",
                                        caption: "Will take \(String(format: "%.2f", animationDuration)) second(s) to complete one revolution.")
                 }
