@@ -10,7 +10,7 @@ import SwiftUI
 struct LoadingIndicatorDescriptionView: View {
     
     // MARK: Stored properties
-    @State var animationDuration = 1.0
+    @State var spreadValue = 75.0
     
     // MARK: Computed properties
     var body: some View {
@@ -27,20 +27,20 @@ struct LoadingIndicatorDescriptionView: View {
                 Text("""
                     This view can be used to indicate that a user should wait for the app to complete a task.
                     
-                    You can control the duration of the animation using the slider below, whose value is passed as an argument to the view.
+                    You can control how much the circles spread out using the slider, whose value is passed as an argument to the view.
                     """)
                 .minimumScaleFactor(0.5)
                 
                 HStack {
                     
-                    Text("1")
+                    Text("50")
                         .font(.caption)
                     
-                    Slider(value: $animationDuration, in: 1...5, step: 0.25) {
-                        Text("Animation duration")
+                    Slider(value: $spreadValue, in: 50...100, step: 1.0) {
+                        Text("Spread value")
                     }
 
-                    Text("5")
+                    Text("100")
                         .font(.caption)
 
                 }
@@ -49,15 +49,15 @@ struct LoadingIndicatorDescriptionView: View {
             .padding(.bottom)
             
             List {
-                NavigationLink(destination: LoadingIndicatorView(duration: animationDuration, spread: 75.0)) {
+                NavigationLink(destination: LoadingIndicatorView(spread: spreadValue)) {
                     SimpleListItemView(title: "Loading Indicator",
-                                       caption: "Will take \(String(format: "%.2f", animationDuration)) second(s) to complete one revolution.")
+                                       caption: "Circles will move \(String(format: "%.2f", spreadValue)) pixels from the centre of the view.")
                 }
             }
 
         }
         .padding()
-        .navigationTitle("Completion Meter")
+        .navigationTitle("Loading Indicator")
         
     }
     
